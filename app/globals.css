@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: theme("colors.cream.DEFAULT");
+  color: theme("colors.ink");
+  font-size: 15.5px;
+  line-height: 1.65;
+}
+
+h1, h2, h3, h4 {
+  font-family: theme("fontFamily.display");
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+/* Space for the sticky mobile bottom bar so it never covers content */
+@media (max-width: 767px) {
+  body {
+    padding-bottom: 4.5rem;
+  }
+}
+
+/* ---- Colour bands (full-bleed, per the reference rhythm) ---- */
+.band-maroon {
+  background-color: theme("colors.brand.DEFAULT");
+  color: rgba(251, 248, 243, 0.86);
+}
+.band-dark {
+  background-color: theme("colors.charcoal.DEFAULT");
+  color: rgba(251, 248, 243, 0.82);
+}
+.band-cream {
+  background-color: theme("colors.cream.DEFAULT");
+  color: theme("colors.ink");
+}
+.band-maroon :is(h1, h2, h3, h4),
+.band-dark :is(h1, h2, h3, h4) {
+  color: theme("colors.cream.DEFAULT");
+}
+.band-cream :is(h2, h3) {
+  color: theme("colors.brand.DEFAULT");
+}
+.band-maroon .eyebrow,
+.band-dark .eyebrow {
+  color: theme("colors.gold.light");
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-btn px-7 py-3.5 text-base font-medium leading-none transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gold;
+  }
+  .btn-primary {
+    @apply btn bg-brand text-cream hover:bg-brand-dark;
+  }
+  .btn-on-dark {
+    @apply btn bg-cream text-brand hover:bg-white;
+  }
+  .btn-gold {
+    @apply btn bg-gold text-cream hover:bg-gold-dark;
+  }
+  .btn-outline {
+    @apply btn border border-brand bg-transparent text-brand hover:bg-brand hover:text-cream;
+  }
+
+  /* inner max-width wrapper; the colour band sits on the <section> */
+  .section {
+    @apply mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 sm:py-20;
+  }
+
+  .eyebrow {
+    @apply mb-3 block text-center text-[11.5px] font-semibold uppercase tracking-eyebrow text-gold;
+  }
+  .h2 {
+    @apply text-center font-display text-[2rem] font-normal leading-tight sm:text-[2.6rem];
+  }
+  .lede {
+    @apply mx-auto max-w-prose text-center text-base opacity-90;
+  }
+
+  .card {
+    @apply rounded-card border border-cream-border bg-white text-ink shadow-card;
+  }
+  /* card that sits on a dark band */
+  .card-dark {
+    @apply rounded-card border border-white/10 bg-white/[0.04] text-cream/85;
+  }
+
+  .field {
+    @apply w-full rounded-btn border border-cream-border bg-white px-4 py-3 text-base text-ink placeholder:text-ink/45 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand/40;
+  }
+}
