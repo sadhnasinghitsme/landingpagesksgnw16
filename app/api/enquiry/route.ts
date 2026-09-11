@@ -17,20 +17,24 @@ export async function POST(request: Request) {
   const name = String(body.name ?? "").trim();
   const phone = String(body.phone ?? "").replace(/\D/g, "");
   const classApplyingFor = String(body.classApplyingFor ?? "").trim();
+  const email = String(body.email ?? "").trim();
+  const message = String(body.message ?? "").trim();
 
   if (String(body.company ?? "").trim() !== "") {
     // honeypot tripped — pretend success, do nothing
     return NextResponse.json({ ok: true });
   }
 
-  if (!name || phone.length < 10 || !classApplyingFor) {
+  if (!name || phone.length < 10) {
     return NextResponse.json({ ok: false, error: "Missing required fields" }, { status: 422 });
   }
 
   const lead = {
     name,
     phone,
-    classApplyingFor,
+    ...(classApplyingFor && { classApplyingFor }),
+    ...(email && { email }),
+    ...(message && { message }),
     source: String(body.source ?? "unknown"),
     receivedAt: new Date().toISOString(),
   };

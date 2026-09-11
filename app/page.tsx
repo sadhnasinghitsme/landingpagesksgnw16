@@ -1,6 +1,7 @@
 import { EnquiryModalProvider } from "@/components/EnquiryModal";
 import { StickyTopBar } from "@/components/StickyTopBar";
 import { StickyBottomBar } from "@/components/StickyBottomBar";
+import { FloatingActions } from "@/components/FloatingActions";
 import { Hero } from "@/components/Hero";
 import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { Infrastructure } from "@/components/Infrastructure";
@@ -29,6 +30,7 @@ export default function Page() {
       </main>
       <Footer />
       <StickyBottomBar />
+      <FloatingActions />
     </EnquiryModalProvider>
   );
 }

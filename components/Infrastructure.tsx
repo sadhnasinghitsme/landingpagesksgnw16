@@ -22,12 +22,14 @@ const PHOTOS = [
   },
 ];
 
-// each facility group carries one house colour as its accent
+// each facility group carries one house colour as its accent, plus a banner photo
 const GROUPS = [
   {
     Icon: FlaskIcon,
     title: "Academic",
     house: 1, // blue
+    img: "https://skswsgnw.ac.in/wp-content/uploads/2025/10/1.jpg",
+    imgAlt: "The science lab at SKS World School",
     items: [
       "Science, Maths & Computer labs",
       "Well-stocked library",
@@ -39,12 +41,16 @@ const GROUPS = [
     Icon: PaletteIcon,
     title: "Arts & Culture",
     house: 0, // red
+    img: "https://skswsgnw.ac.in/wp-content/uploads/2025/10/8.jpg",
+    imgAlt: "Students in a dance class at SKS World School",
     items: ["AC auditorium", "Music & dance spaces", "Art & craft studios"],
   },
   {
     Icon: BallIcon,
     title: "Sports & Recreation",
     house: 3, // green
+    img: "https://skswsgnw.ac.in/wp-content/uploads/2025/10/15.jpg",
+    imgAlt: "Students at the skating rink at SKS World School",
     items: [
       "150m playground",
       "Indoor swimming pool",
@@ -56,6 +62,8 @@ const GROUPS = [
     Icon: ShieldIcon,
     title: "Safety & Security",
     house: 2, // yellow
+    img: "https://skswsgnw.ac.in/wp-content/uploads/2025/10/22-1.jpg",
+    imgAlt: "CCTV security camera on the SKS World School campus",
     items: [
       "CCTV surveillance across campus",
       "Trained security staff",
@@ -97,31 +105,40 @@ export function Infrastructure() {
         </div>
 
         <div className="grid gap-5 sm:grid-cols-2">
-          {GROUPS.map(({ Icon, title, items, house }) => (
-            <div
-              key={title}
-              className="card relative overflow-hidden p-6"
-            >
-              <span
-                aria-hidden="true"
-                className={`absolute inset-y-0 left-0 w-1 ${HOUSE_DOT[house]}`}
-              />
-              <div className="flex items-center gap-2.5">
-                <span className={`inline-flex rounded-btn p-2 ${HOUSE_CHIP[house]}`}>
-                  <Icon width={22} height={22} />
-                </span>
-                <h3 className="font-display text-lg text-brand">{title}</h3>
+          {GROUPS.map(({ Icon, title, items, house, img, imgAlt }) => (
+            <div key={title} className="card overflow-hidden">
+              <div className="relative aspect-[16/9] w-full bg-cream-dark">
+                <Image
+                  src={img}
+                  alt={imgAlt}
+                  fill
+                  sizes="(min-width: 640px) 50vw, 100vw"
+                  className="object-cover"
+                />
               </div>
-              <ul className="mt-3 grid gap-1.5">
-                {items.map((it) => (
-                  <li key={it} className="flex items-start gap-2 text-sm text-ink/80">
-                    <span
-                      className={`mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full ${HOUSE_DOT[house]}`}
-                    />
-                    {it}
-                  </li>
-                ))}
-              </ul>
+
+              <div className="relative p-6">
+                <span
+                  aria-hidden="true"
+                  className={`absolute inset-y-0 left-0 w-1 ${HOUSE_DOT[house]}`}
+                />
+                <div className="flex items-center gap-2.5">
+                  <span className={`inline-flex rounded-btn p-2 ${HOUSE_CHIP[house]}`}>
+                    <Icon width={22} height={22} />
+                  </span>
+                  <h3 className="font-display text-lg text-brand">{title}</h3>
+                </div>
+                <ul className="mt-3 grid gap-1.5">
+                  {items.map((it) => (
+                    <li key={it} className="flex items-start gap-2 text-sm text-ink/80">
+                      <span
+                        className={`mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full ${HOUSE_DOT[house]}`}
+                      />
+                      {it}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           ))}
         </div>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { PhoneIcon } from "./icons";
 
 function Social({ label, d }: { label: string; d: string }) {
@@ -80,6 +81,13 @@ export function Footer() {
           &copy; {new Date().getFullYear()} SKS World School, Greater Noida West.
           Admission enquiry landing page. For complete information visit
           skswsgnw.ac.in.
+          <span className="mx-2 text-cream/25">|</span>
+          <Link
+            href="/privacy-policy"
+            className="underline decoration-cream/30 underline-offset-2 transition-colors hover:text-gold-light hover:decoration-gold-light"
+          >
+            Privacy Policy
+          </Link>
         </p>
       </div>
     </footer>

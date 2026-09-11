@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { PhoneIcon } from "./icons";
 import { HouseBar } from "./HouseAccent";
+import { ApplyNowButton } from "./EnquiryModal";
 
 export function StickyTopBar() {
   return (
@@ -36,13 +37,21 @@ export function StickyTopBar() {
               className="h-8 w-auto sm:h-10"
             />
           </a>
-          <a
-            href="tel:+919891081270"
-            className="inline-flex items-center gap-2 rounded-btn bg-brand px-4 py-2 text-sm font-medium text-cream ring-1 ring-transparent transition hover:bg-brand-dark hover:ring-house-yellow sm:text-base"
-          >
-            <PhoneIcon width={18} height={18} />
-            <span>+91-9891081270</span>
-          </a>
+          <div className="flex items-center gap-2 sm:gap-3">
+            <a
+              href="tel:+919891081270"
+              className="inline-flex items-center gap-2 rounded-btn bg-brand px-4 py-2 text-sm font-medium text-cream ring-1 ring-transparent transition hover:bg-brand-dark hover:ring-house-yellow sm:text-base"
+            >
+              <PhoneIcon width={18} height={18} />
+              <span>+91-9891081270</span>
+            </a>
+            {/* desktop-only trigger — mobile already has the sticky bottom bar */}
+            <ApplyNowButton
+              className="hidden items-center gap-2 rounded-btn px-4 py-2 text-sm font-medium text-[#132A45] ring-1 ring-[#D4A548] transition hover:bg-[#D4A548] hover:text-white md:inline-flex sm:text-base"
+            >
+              Apply Now
+            </ApplyNowButton>
+          </div>
         </div>
       </div>
 

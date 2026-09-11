@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { useEnquiryModal } from "./EnquiryModal";
 import { HOUSE_BORDER_L, HOUSE_HOVER_BORDER } from "./HouseAccent";
 
@@ -17,6 +18,8 @@ const TABS = [
       "Regular mobile / SMS updates for parents",
     ],
     basis: "Admission by interaction and age eligibility — no written test.",
+    img: "https://skswsgnw.ac.in/wp-content/uploads/2025/10/6.jpg",
+    imgAlt: "Indoor play area for tiny tots at SKS World School",
   },
   {
     id: "primary",
@@ -31,6 +34,8 @@ const TABS = [
     ],
     basis:
       "Admission based on an interaction / basic assessment appropriate to the class and age eligibility.",
+    img: "https://skswsgnw.ac.in/wp-content/uploads/2025/10/4.jpg",
+    imgAlt: "The library at SKS World School",
   },
   {
     id: "middle",
@@ -45,6 +50,8 @@ const TABS = [
     ],
     basis:
       "Admission based on a written assessment in core subjects and an interview.",
+    img: "https://skswsgnw.ac.in/wp-content/uploads/2025/10/3.jpg",
+    imgAlt: "Students in the computer lab at SKS World School",
   },
   {
     id: "secondary",
@@ -59,6 +66,8 @@ const TABS = [
     ],
     basis:
       "Admission based on a written test, previous academic record and an interview. Class XI admission is stream-wise, subject to Class X performance and seat availability.",
+    img: "https://skswsgnw.ac.in/wp-content/uploads/2025/10/1.jpg",
+    imgAlt: "Students in the science lab at SKS World School",
   },
 ];
 
@@ -99,42 +108,57 @@ export function AdmissionTabs() {
         role="tabpanel"
         className="rounded-card border border-cream-border bg-white p-6 text-ink shadow-lift sm:p-8"
       >
-        <h3 className="font-display text-2xl !text-brand">{tab.label}</h3>
-
-        <div className="mt-4 grid gap-5 sm:grid-cols-2">
-          <div>
-            <p className="text-[11px] font-semibold uppercase tracking-eyebrow text-gold-dark">
-              What&apos;s taught
-            </p>
-            <p className="mt-1.5 text-sm text-ink/80">{tab.taught}</p>
+        <div className="grid gap-6 lg:grid-cols-[280px_1fr] lg:items-start">
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-card border border-cream-border bg-cream-dark lg:aspect-[3/4]">
+            <Image
+              key={tab.img}
+              src={tab.img}
+              alt={tab.imgAlt}
+              fill
+              sizes="(min-width: 1024px) 280px, 100vw"
+              className="object-cover"
+            />
           </div>
+
           <div>
-            <p className="text-[11px] font-semibold uppercase tracking-eyebrow text-gold-dark">
-              Highlights
-            </p>
-            <ul className="mt-1.5 grid gap-1.5">
-              {tab.highlights.map((h) => (
-                <li key={h} className="flex items-start gap-2 text-sm text-ink/80">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" />
-                  {h}
-                </li>
-              ))}
-            </ul>
+            <h3 className="font-display text-2xl !text-brand">{tab.label}</h3>
+
+            <div className="mt-4 grid gap-5 sm:grid-cols-2">
+              <div>
+                <p className="text-[11px] font-semibold uppercase tracking-eyebrow text-gold-dark">
+                  What&apos;s taught
+                </p>
+                <p className="mt-1.5 text-sm text-ink/80">{tab.taught}</p>
+              </div>
+              <div>
+                <p className="text-[11px] font-semibold uppercase tracking-eyebrow text-gold-dark">
+                  Highlights
+                </p>
+                <ul className="mt-1.5 grid gap-1.5">
+                  {tab.highlights.map((h) => (
+                    <li key={h} className="flex items-start gap-2 text-sm text-ink/80">
+                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" />
+                      {h}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-5 rounded-btn bg-cream p-4 text-sm text-ink/80">
+              <span className="font-semibold text-ink">Admission basis: </span>
+              {tab.basis}
+            </div>
+
+            <button
+              type="button"
+              onClick={() => open(tab.preset)}
+              className="btn-primary mt-5 w-full sm:w-auto"
+            >
+              Enquire for {tab.label}
+            </button>
           </div>
         </div>
-
-        <div className="mt-5 rounded-btn bg-cream p-4 text-sm text-ink/80">
-          <span className="font-semibold text-ink">Admission basis: </span>
-          {tab.basis}
-        </div>
-
-        <button
-          type="button"
-          onClick={() => open(tab.preset)}
-          className="btn-primary mt-5 w-full sm:w-auto"
-        >
-          Enquire for {tab.label}
-        </button>
       </div>
       </div>
     </section>
