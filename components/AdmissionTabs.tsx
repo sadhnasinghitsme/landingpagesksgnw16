@@ -4,6 +4,10 @@ import { useState } from "react";
 import Image from "next/image";
 import { useEnquiryModal } from "./EnquiryModal";
 import { HOUSE_BORDER_L, HOUSE_HOVER_BORDER } from "./HouseAccent";
+import prePrimaryImg from "./pre-primary-play-area.png";
+import primaryImg from "./primary-library.png";
+import middleImg from "./middle-computer-lab.png";
+import secondaryImg from "./secondary-science-lab.png";
 
 const TABS = [
   {
@@ -18,7 +22,7 @@ const TABS = [
       "Regular mobile / SMS updates for parents",
     ],
     basis: "Admission by interaction and age eligibility — no written test.",
-    img: "https://skswsgnw.ac.in/wp-content/uploads/2025/10/6.jpg",
+    img: prePrimaryImg,
     imgAlt: "Indoor play area for tiny tots at SKS World School",
   },
   {
@@ -34,7 +38,7 @@ const TABS = [
     ],
     basis:
       "Admission based on an interaction / basic assessment appropriate to the class and age eligibility.",
-    img: "https://skswsgnw.ac.in/wp-content/uploads/2025/10/4.jpg",
+    img: primaryImg,
     imgAlt: "The library at SKS World School",
   },
   {
@@ -50,7 +54,7 @@ const TABS = [
     ],
     basis:
       "Admission based on a written assessment in core subjects and an interview.",
-    img: "https://skswsgnw.ac.in/wp-content/uploads/2025/10/3.jpg",
+    img: middleImg,
     imgAlt: "Students in the computer lab at SKS World School",
   },
   {
@@ -66,7 +70,7 @@ const TABS = [
     ],
     basis:
       "Admission based on a written test, previous academic record and an interview. Class XI admission is stream-wise, subject to Class X performance and seat availability.",
-    img: "https://skswsgnw.ac.in/wp-content/uploads/2025/10/1.jpg",
+    img: secondaryImg,
     imgAlt: "Students in the science lab at SKS World School",
   },
 ];
@@ -111,7 +115,7 @@ export function AdmissionTabs() {
         <div className="grid gap-6 lg:grid-cols-[280px_1fr] lg:items-start">
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-card border border-cream-border bg-cream-dark lg:aspect-[3/4]">
             <Image
-              key={tab.img}
+              key={tab.id}
               src={tab.img}
               alt={tab.imgAlt}
               fill

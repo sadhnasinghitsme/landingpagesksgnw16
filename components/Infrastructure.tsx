@@ -6,14 +6,20 @@ import {
   HOUSE_DOT,
   HOUSE_STRIP,
 } from "./HouseAccent";
+import yogaImg from "./yoga-session.png";
+import poolImg from "./swimming-pool.png";
+import skatingRinkImg from "./skating-rink.png";
+import scienceLabImg from "./science-lab.png";
+import danceClassImg from "./dance-class.png";
+import cctvCameraImg from "./cctv-camera.png";
 
 const PHOTOS = [
   {
-    src: "https://skswsgnw.ac.in/wp-content/uploads/2025/10/16.jpg",
-    alt: "The SKS World School campus building in Sector-16, Greater Noida West",
+    src: yogaImg,
+    alt: "Students doing yoga on the SKS World School campus grounds",
   },
   {
-    src: "https://skswsgnw.ac.in/wp-content/uploads/2025/10/17.jpg",
+    src: poolImg,
     alt: "Indoor swimming pool at SKS World School",
   },
   {
@@ -28,7 +34,7 @@ const GROUPS = [
     Icon: FlaskIcon,
     title: "Academic",
     house: 1, // blue
-    img: "https://skswsgnw.ac.in/wp-content/uploads/2025/10/1.jpg",
+    img: scienceLabImg,
     imgAlt: "The science lab at SKS World School",
     items: [
       "Science, Maths & Computer labs",
@@ -41,7 +47,7 @@ const GROUPS = [
     Icon: PaletteIcon,
     title: "Arts & Culture",
     house: 0, // red
-    img: "https://skswsgnw.ac.in/wp-content/uploads/2025/10/8.jpg",
+    img: danceClassImg,
     imgAlt: "Students in a dance class at SKS World School",
     items: ["AC auditorium", "Music & dance spaces", "Art & craft studios"],
   },
@@ -49,7 +55,7 @@ const GROUPS = [
     Icon: BallIcon,
     title: "Sports & Recreation",
     house: 3, // green
-    img: "https://skswsgnw.ac.in/wp-content/uploads/2025/10/15.jpg",
+    img: skatingRinkImg,
     imgAlt: "Students at the skating rink at SKS World School",
     items: [
       "150m playground",
@@ -62,7 +68,7 @@ const GROUPS = [
     Icon: ShieldIcon,
     title: "Safety & Security",
     house: 2, // yellow
-    img: "https://skswsgnw.ac.in/wp-content/uploads/2025/10/22-1.jpg",
+    img: cctvCameraImg,
     imgAlt: "CCTV security camera on the SKS World School campus",
     items: [
       "CCTV surveillance across campus",
@@ -86,7 +92,7 @@ export function Infrastructure() {
         <div className="mb-6 grid gap-4 sm:grid-cols-3">
           {PHOTOS.map((p, i) => (
             <div
-              key={p.src}
+              key={p.alt}
               className="relative aspect-[4/3] overflow-hidden rounded-card border border-cream-border bg-cream-dark"
             >
               <Image
