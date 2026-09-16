@@ -1,8 +1,6 @@
 "use client";
 
 import type { SVGProps } from "react";
-import { useEnquiryModal } from "./EnquiryModal";
-import { PhoneChatIcon } from "./icons";
 
 function WhatsAppIcon(props: SVGProps<SVGSVGElement>) {
   return (
@@ -14,10 +12,8 @@ function WhatsAppIcon(props: SVGProps<SVGSVGElement>) {
 
 /** Stacked floating action buttons — bottom-right, above the mobile sticky bar. */
 export function FloatingActions() {
-  const { open } = useEnquiryModal();
-
   return (
-    <div className="fixed bottom-24 right-4 z-40 flex flex-col items-end gap-3 md:bottom-8 md:right-6">
+    <div className="fixed bottom-24 right-4 z-40 flex flex-col items-end md:bottom-8 md:right-6">
       <a
         href="https://wa.me/919319910888"
         target="_blank"
@@ -28,16 +24,6 @@ export function FloatingActions() {
         <WhatsAppIcon width={22} height={22} className="shrink-0" />
         <span>WhatsApp</span>
       </a>
-
-      <button
-        type="button"
-        onClick={() => open()}
-        aria-label="Open the admission enquiry form"
-        className="inline-flex items-center gap-2 rounded-full bg-brand py-3 pl-3.5 pr-4 text-sm font-semibold text-cream shadow-lift transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-dark hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brand"
-      >
-        <PhoneChatIcon width={20} height={20} className="shrink-0" />
-        <span>Enquire</span>
-      </button>
     </div>
   );
 }
