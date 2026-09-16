@@ -1,17 +1,22 @@
 import type { Metadata, Viewport } from "next";
-import { Marcellus, Karla } from "next/font/google";
+import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 
-// Headings — elegant serif, matches the reference theme.
-const display = Marcellus({
+// Headings — Playfair Display, applied globally via the --font-display
+// CSS variable (see globals.css `h1,h2,h3,h4` rule and tailwind.config.ts
+// `fontFamily.display`). This is the single source of truth for heading
+// fonts — no component or stylesheet should declare its own font-family.
+const display = Playfair_Display({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-display",
   display: "swap",
 });
 
-// Body — humanist sans, matches the reference theme.
-const body = Karla({
+// Body, forms & buttons — Inter, applied globally via the --font-body
+// CSS variable (see tailwind.config.ts `fontFamily.sans`, used by the
+// `font-sans` class on <body> that every form field and button inherits).
+const body = Inter({
   subsets: ["latin"],
   variable: "--font-body",
   display: "swap",

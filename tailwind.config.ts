@@ -8,8 +8,8 @@ import type { Config } from "tailwindcss";
  *  - body background  #FBF8F3      - hairline border  #E0D7C6
  *  - card radius      10px         - button radius    3px (flat, no shadow)
  *  - card shadow      0 4px 16px rgba(31,33,30,.09)
- *  - headings         Marcellus serif, weight 400
- *  - body             Karla sans
+ *  - headings         Playfair Display serif, weight 400
+ *  - body             Inter sans (forms & buttons inherit this too)
  *  - eyebrow          11.5px / 500 / 0.28em / uppercase / bronze
  *  - sections         full-bleed colour bands, ~64px vertical padding
  *
