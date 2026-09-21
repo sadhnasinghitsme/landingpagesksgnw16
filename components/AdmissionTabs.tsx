@@ -4,69 +4,69 @@ import { useState } from "react";
 import Image from "next/image";
 import { useEnquiryModal } from "./EnquiryModal";
 import { HOUSE_BORDER_L, HOUSE_HOVER_BORDER } from "./HouseAccent";
-import prePrimaryImg from "./pre-primary-play-area.png";
 import primaryImg from "./primary-library.png";
 import middleImg from "./middle-computer-lab.png";
 import secondaryImg from "./secondary-science-lab.png";
 
 const TABS = [
   {
-    id: "pre-primary",
-    label: "Pre-Primary",
-    preset: "Pre-Nursery",
+    id: "class-6",
+    label: "Class VI",
+    preset: "Class VI",
     taught:
-      "Play-based early learning — language readiness, number sense, motor skills, music, art and structured free play in small groups.",
+      "Class VI is the bridge into subject-based learning. Students move to dedicated teachers for English, Hindi, Mathematics, Science and Social Science, pick up a third language and computer skills, and keep art, music and sport in their week.",
     highlights: [
-      "Class size just 25 in KG",
-      "Activity-first, screen-light classrooms",
+      "Up to 35 students per class",
+      "Teacher-Student Ratio 1:20",
       "Regular mobile / SMS updates for parents",
     ],
-    basis: "Admission by interaction and age eligibility — no written test.",
-    img: prePrimaryImg,
-    imgAlt: "Indoor play area for tiny tots at SKS World School",
-  },
-  {
-    id: "primary",
-    label: "Primary (I-V)",
-    preset: "Class I",
-    taught:
-      "CBSE curriculum with English, Hindi, Mathematics, EVS, Computers, plus art, music, dance and sports. Strong focus on reading fluency and concept clarity.",
-    highlights: [
-      "Class size 30 in I-II, 35 from III",
-      "Smart classrooms & activity labs",
-      "Swimming, skating and 150m playground",
-    ],
     basis:
-      "Admission based on an interaction / basic assessment appropriate to the class and age eligibility.",
+      "Admission based on a written assessment in core subjects and an interview, with age eligibility as per CBSE norms.",
     img: primaryImg,
     imgAlt: "The library at SKS World School",
   },
   {
-    id: "middle",
-    label: "Middle (VI-VIII)",
-    preset: "Class VI",
+    id: "class-7-8",
+    label: "Classes VII–VIII",
+    preset: "Class VII",
     taught:
-      "CBSE curriculum with Science, Mathematics, Social Science, three languages, plus Robotics with LEGO, computer applications and co-curricular clubs.",
+      "Ideas in Science, Mathematics and Social Science grow deeper, and students learn by doing — building in the Robotic Lab, using computer applications and joining clubs that stretch curiosity beyond the textbook.",
     highlights: [
-      "Teacher-Student Ratio 1:20",
       "Robotic Lab in association with LEGO",
-      "International School Award curriculum links",
+      "Smart classrooms & activity labs",
+      "House system with inter-house events",
     ],
     basis:
-      "Admission based on a written assessment in core subjects and an interview.",
+      "Admission based on a written assessment in core subjects and an interview, subject to seat availability.",
     img: middleImg,
     imgAlt: "Students in the computer lab at SKS World School",
   },
   {
-    id: "secondary",
-    label: "Secondary & Sr. Secondary (IX-XII)",
+    id: "class-9-10",
+    label: "Classes IX–X",
     preset: "Class IX",
     taught:
-      "CBSE board classes for IX-X, and all streams in XI-XII — Science, Commerce and Humanities — with lab-intensive teaching and board-focused mentoring.",
+      "Board preparation begins in earnest. Regular tests, practical work, revision plans and one-to-one mentoring help students build strong fundamentals before the CBSE Class X examinations and the choice of stream.",
     highlights: [
       "100% CBSE board results",
-      "All streams offered in XI-XII",
+      "Remedial and revision support",
       "Fully equipped science & computer labs",
+    ],
+    basis:
+      "Admission based on a written test, previous academic record and an interview.",
+    img: secondaryImg,
+    imgAlt: "Students in the science lab at SKS World School",
+  },
+  {
+    id: "class-11-12",
+    label: "Classes XI–XII",
+    preset: "Class XI",
+    taught:
+      "Senior secondary students choose Science, Commerce or Humanities and learn from subject specialists, with lab work, projects and board-focused mentoring that prepare them for college and competitive exams.",
+    highlights: [
+      "All three streams under one roof",
+      "Lab-intensive practicals",
+      "Up to 35 students per class",
     ],
     basis:
       "Admission based on a written test, previous academic record and an interview. Class XI admission is stream-wise, subject to Class X performance and seat availability.",
@@ -85,7 +85,7 @@ export function AdmissionTabs() {
       <div className="section">
       <div className="mb-10">
         <span className="eyebrow">Classes</span>
-        <h2 className="h2">Explore Our Classes — Pre-Primary to Sr. Secondary</h2>
+        <h2 className="h2">Explore Our Classes — Class VI to Class XII</h2>
       </div>
 
       <div className="-mx-4 mb-5 overflow-x-auto px-4">

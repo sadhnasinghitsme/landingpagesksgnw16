@@ -37,9 +37,9 @@ const GROUPS = [
     img: scienceLabImg,
     imgAlt: "The science lab at SKS World School",
     items: [
-      "Science, Maths & Computer labs",
-      "Well-stocked library",
-      "Smart classrooms",
+      "Science, Maths, Language & Computer labs",
+      "Air-conditioned library",
+      "Smart-board classrooms",
       "Robotic Lab with LEGO",
     ],
   },
@@ -49,7 +49,7 @@ const GROUPS = [
     house: 0, // red
     img: danceClassImg,
     imgAlt: "Students in a dance class at SKS World School",
-    items: ["AC auditorium", "Music & dance spaces", "Art & craft studios"],
+    items: ["AC indoor auditorium", "Music & dance rooms", "Art room & creative studios"],
   },
   {
     Icon: BallIcon,
@@ -61,7 +61,7 @@ const GROUPS = [
       "150m playground",
       "Indoor swimming pool",
       "Skating rink",
-      "Outdoor & indoor games",
+      "Basketball, badminton, tennis & cricket nets",
     ],
   },
   {
@@ -72,9 +72,9 @@ const GROUPS = [
     imgAlt: "CCTV security camera on the SKS World School campus",
     items: [
       "CCTV surveillance across campus",
-      "Trained security staff",
+      "Trained security personnel",
       "New buses with custom routes",
-      "Controlled entry & exit",
+      "First-aid infirmary on campus",
     ],
   },
 ];

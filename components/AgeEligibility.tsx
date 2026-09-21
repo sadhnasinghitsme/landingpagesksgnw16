@@ -2,24 +2,24 @@ import { HOUSE_BORDER_L } from "./HouseAccent";
 
 const ROWS = [
   {
-    stage: "Pre-Primary",
-    classes: "Pre-Nursery, Nursery, KG",
-    basis: "Interaction with child and parents; age eligibility as per CBSE / state norms. No written test.",
-  },
-  {
-    stage: "Primary",
-    classes: "Classes I to V",
-    basis: "Basic interaction / assessment appropriate to the class, plus age eligibility and seat availability.",
+    stage: "Middle",
+    classes: "Class VI",
+    basis: "Written assessment in core subjects and an interview; age eligibility as per CBSE norms.",
   },
   {
     stage: "Middle",
-    classes: "Classes VI to VIII",
-    basis: "Written assessment in core subjects and an interview.",
+    classes: "Classes VII and VIII",
+    basis: "Written assessment in core subjects and an interview, plus the previous class report card and seat availability.",
   },
   {
     stage: "Secondary",
-    classes: "Classes IX and X",
+    classes: "Class IX",
     basis: "Written test, previous academic record and interview.",
+  },
+  {
+    stage: "Secondary",
+    classes: "Class X",
+    basis: "Written test, previous academic record and interview, subject to seat availability.",
   },
   {
     stage: "Senior Secondary",

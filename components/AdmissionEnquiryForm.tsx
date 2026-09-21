@@ -6,14 +6,6 @@ const GOLD = "#D4A548";
 const GOLD_DARK = "#B78A34";
 
 const GRADE_OPTIONS = [
-  "Pre-Nursery",
-  "Nursery",
-  "KG",
-  "Class I",
-  "Class II",
-  "Class III",
-  "Class IV",
-  "Class V",
   "Class VI",
   "Class VII",
   "Class VIII",

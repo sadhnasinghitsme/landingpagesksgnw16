@@ -6,7 +6,7 @@ import { HOUSE_OPEN_BORDER, HOUSE_OPEN_TEXT } from "./HouseAccent";
 const FAQS = [
   {
     q: "What is the admission process at SKS World School?",
-    a: "Submit an enquiry or registration form, complete documentation, appear for an age-appropriate interaction or written test with interview, deposit the fee on selection, and receive your admission confirmation.",
+    a: "Submit an enquiry or registration form, complete documentation, appear for a written test and an interview, deposit the fee on selection, and receive your admission confirmation.",
   },
   {
     q: "Which board is the school affiliated to?",
@@ -14,19 +14,19 @@ const FAQS = [
   },
   {
     q: "Is there an entrance exam for admission?",
-    a: "Pre-primary admissions are through a friendly interaction, not a written test. From the middle classes upwards, there is a written assessment in core subjects along with an interview.",
+    a: "Yes. Applicants for Classes VI to X sit a written assessment in core subjects followed by an interview, and Class XI applicants are also considered stream-wise.",
   },
   {
     q: "Is SKS World School co-educational?",
-    a: "Yes. It is a co-educational, English-medium school admitting children from Pre-Nursery onwards, with all streams offered in Classes XI and XII.",
+    a: "Yes. It is a co-educational, English-medium school admitting students from Class VI to Class XII, with Science, Commerce and Humanities offered in Classes XI and XII.",
   },
   {
     q: "What is the class strength / section size?",
-    a: "Class sizes are kept small — 25 in KG, 30 in Classes I-II, and 35 in Classes III to XII.",
+    a: "Class sizes are kept manageable — sections in Classes VI to XII have up to 35 students.",
   },
   {
     q: "What is the teacher-student ratio?",
-    a: "The teacher-student ratio is 1:20, so every child gets individual attention.",
+    a: "The teacher-student ratio is 1:20, so every student gets individual attention.",
   },
   {
     q: "Does the school provide transport?",
@@ -34,7 +34,7 @@ const FAQS = [
   },
   {
     q: "Are meals provided at school?",
-    a: "Children bring a healthy home packed lunch. Please contact the school office for the current meal and snack policy for your child's class.",
+    a: "Students usually bring a healthy home-packed lunch. Please contact the school office for the current canteen and snack arrangements.",
   },
   {
     q: "How safe is the campus?",

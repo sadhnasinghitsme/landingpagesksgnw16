@@ -12,7 +12,7 @@ const STEPS = [
   {
     n: 3,
     title: "Test / Interview",
-    body: "Age-appropriate interaction for pre-primary; written assessment and interview for higher classes.",
+    body: "Sit a written assessment in core subjects, followed by a short interview with the student and a parent.",
   },
   {
     n: 4,

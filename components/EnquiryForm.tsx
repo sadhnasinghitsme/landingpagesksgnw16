@@ -4,14 +4,6 @@ import { useId, useState } from "react";
 import { CheckIcon } from "./icons";
 
 const CLASS_OPTIONS = [
-  "Pre-Nursery",
-  "Nursery",
-  "KG",
-  "Class I",
-  "Class II",
-  "Class III",
-  "Class IV",
-  "Class V",
   "Class VI",
   "Class VII",
   "Class VIII",

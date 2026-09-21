@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   title:
     "Admissions Open 2026-27 | SKS World School, Greater Noida West (CBSE)",
   description:
-    "Apply for admission to SKS World School, Greater Noida West — CBSE affiliated (No. 2134098), 1:20 teacher-student ratio, 100% board results, International School Award 2018-21, LEGO Robotics Lab. Pre-Nursery onwards. Enquire now: +91-9891081270.",
+    "Apply for admission to SKS World School, Greater Noida West — CBSE affiliated (No. 2134098), 1:20 teacher-student ratio, 100% board results, International School Award 2018-21, LEGO Robotics Lab. Admissions for Classes VI to XII. Enquire now: +91-9891081270.",
   keywords: [
     "SKS World School",
     "best school in Greater Noida West",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     siteName: "SKS World School, Greater Noida West",
     title: "Admissions Open | SKS World School, Greater Noida West (CBSE)",
     description:
-      "CBSE affiliated, 1:20 ratio, 100% board results, International School Award 2018-21, LEGO Robotics Lab. Pre-Nursery onwards. Enquire: +91-9891081270.",
+      "CBSE affiliated, 1:20 ratio, 100% board results, International School Award 2018-21, LEGO Robotics Lab. Classes VI to XII. Enquire: +91-9891081270.",
     locale: "en_IN",
   },
   twitter: {

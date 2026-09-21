@@ -6,7 +6,7 @@ const TRUST_BULLETS = [
   "Affiliated to CBSE, New Delhi (Affiliation No. 2134098)",
   "Teacher–Student Ratio of 1:20",
   "Robotic Lab in association with LEGO",
-  "Co-educational, English-medium, Pre-Nursery onwards",
+  "Co-educational, English-medium, Classes VI to XII",
   "International School Award 2018-21",
 ];
 
@@ -28,10 +28,10 @@ export function Hero() {
             One of the Best Schools in Greater Noida West
           </h1>
           <p className="mt-3 max-w-prose text-sm text-white/90 sm:text-base">
-            SKS World School is an English-medium, co-educational institution
-            under the SKS Educational &amp; Social Trust, led by Chairman Shri
-            S.K. Sharma — providing CBSE curriculum-based education in the heart
-            of Greater Noida West.
+            SKS World School is an English-medium, co-educational school run by
+            the SKS Educational &amp; Social Trust under Chairman Shri S.K.
+            Sharma. We guide students from Class VI to Class XII through the
+            CBSE curriculum, right in the heart of Greater Noida West.
           </p>
         </div>
 
