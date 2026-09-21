@@ -7,7 +7,8 @@ import {
   HOUSE_STRIP,
 } from "./HouseAccent";
 import yogaImg from "./yoga-session.png";
-import poolImg from "./swimming-pool.png";
+import labExperimentImg from "./C0367T01.jpg";
+import taekwondoImg from "./C0391T01.jpg";
 import skatingRinkImg from "./skating-rink.png";
 import scienceLabImg from "./science-lab.png";
 import danceClassImg from "./dance-class.png";
@@ -19,12 +20,12 @@ const PHOTOS = [
     alt: "Students doing yoga on the SKS World School campus grounds",
   },
   {
-    src: poolImg,
-    alt: "Indoor swimming pool at SKS World School",
+    src: labExperimentImg,
+    alt: "Students carrying out a physics experiment in the lab at SKS World School",
   },
   {
-    src: "https://skswsgnw.ac.in/wp-content/uploads/2025/10/9.jpg",
-    alt: "Students in a smart classroom at SKS World School",
+    src: taekwondoImg,
+    alt: "Students practising taekwondo at SKS World School",
   },
 ];
 
