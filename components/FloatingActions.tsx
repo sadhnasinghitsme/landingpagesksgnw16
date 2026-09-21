@@ -15,7 +15,7 @@ export function FloatingActions() {
   return (
     <div className="fixed bottom-24 right-4 z-40 flex flex-col items-end md:bottom-8 md:right-6">
       <a
-        href="https://wa.me/919319910888"
+        href="https://wa.me/919319910888?text=Hi%2C%20I%20want%20to%20know%20about%20Class%206-12%20admission%20at%20SKS%20World%20School%2C%20Greater%20Noida%20West."
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with us on WhatsApp"

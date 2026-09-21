@@ -38,10 +38,9 @@ const GROUPS = [
     img: scienceLabImg,
     imgAlt: "The science lab at SKS World School",
     items: [
-      "Science, Maths, Language & Computer labs",
-      "Air-conditioned library",
-      "Smart-board classrooms",
-      "Robotic Lab with LEGO",
+      "Science labs",
+      "Smart classrooms",
+      "Counsellor available by appointment",
     ],
   },
   {
@@ -50,7 +49,7 @@ const GROUPS = [
     house: 0, // red
     img: danceClassImg,
     imgAlt: "Students in a dance class at SKS World School",
-    items: ["AC indoor auditorium", "Music & dance rooms", "Art room & creative studios"],
+    items: ["AC indoor auditorium", "Movie/documentary-based education"],
   },
   {
     Icon: BallIcon,
@@ -59,10 +58,10 @@ const GROUPS = [
     img: skatingRinkImg,
     imgAlt: "Students at the skating rink at SKS World School",
     items: [
-      "150m playground",
-      "Indoor swimming pool",
-      "Skating rink",
-      "Basketball, badminton, tennis & cricket nets",
+      "150 m playground",
+      "Basketball, lawn tennis & badminton",
+      "Cricket nets & skating rink",
+      "Yoga (Sadhana) & self-defence",
     ],
   },
   {
@@ -72,10 +71,10 @@ const GROUPS = [
     img: cctvCameraImg,
     imgAlt: "CCTV security camera on the SKS World School campus",
     items: [
-      "CCTV surveillance across campus",
-      "Trained security personnel",
-      "New buses with custom routes",
-      "First-aid infirmary on campus",
+      "CCTV-enabled campus",
+      "GPS and CCTV on every school bus",
+      "Customised bus routes",
+      "Medical room",
     ],
   },
 ];
@@ -86,7 +85,7 @@ export function Infrastructure() {
       <div className="section">
         <div className="mb-10">
           <span className="eyebrow">Infrastructure</span>
-          <h2 className="h2">A Campus Built for Learning by Doing</h2>
+          <h2 className="h2">Campus Life at SKS World School, Sector 16</h2>
           <HouseRule className="mt-4" />
         </div>
 

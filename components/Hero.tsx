@@ -3,11 +3,11 @@ import { HeroCarousel } from "./HeroCarousel";
 import { CheckIcon } from "./icons";
 
 const TRUST_BULLETS = [
-  "Affiliated to CBSE, New Delhi (Affiliation No. 2134098)",
-  "Teacher–Student Ratio of 1:20",
-  "Robotic Lab in association with LEGO",
-  "Co-educational, English-medium, Classes VI to XII",
-  "International School Award 2018-21",
+  "CBSE Affiliation No. 2134098",
+  "Sector 16, Greater Noida West (Noida Extension)",
+  "GPS and CCTV on every school bus",
+  "Co-educational, English-medium, Class 6 to 12",
+  "Student-Teacher Ratio of 1:20",
 ];
 
 export function Hero() {
@@ -22,28 +22,28 @@ export function Hero() {
         {/* A — headline */}
         <div className="max-w-xl lg:col-start-1 lg:row-start-1">
           <span className="text-[11.5px] font-semibold uppercase tracking-eyebrow text-gold-light">
-            Admissions Open 2026-27
+            SKS World School, Sector 16
           </span>
           <h1 className="mt-3 font-display text-[30px] leading-tight text-white sm:text-5xl">
-            One of the Best Schools in Greater Noida West
+            CBSE School in Greater Noida West: Class 6 to 12 Admission
           </h1>
           <p className="mt-3 max-w-prose text-sm text-white/90 sm:text-base">
-            SKS World School is an English-medium, co-educational school run by
-            the SKS Educational &amp; Social Trust under Chairman Shri S.K.
-            Sharma. We guide students from Class VI to Class XII through the
-            CBSE curriculum, right in the heart of Greater Noida West.
+            Admissions open for Class 6 to 12 at SKS World School, Greater Noida
+            West (Noida Extension). CBSE-affiliated, co-ed, English medium.
           </p>
         </div>
 
         {/* B — enquiry form (kept high so it needs no scroll on mobile) */}
         <div className="rounded-card border border-cream-border bg-white p-5 text-ink shadow-lift sm:p-7 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:self-center">
           <p className="mb-1 text-[11.5px] font-semibold uppercase tracking-eyebrow text-gold-dark">
-            Quick Enquiry Form
+            Admission Enquiry
           </p>
-          <h2 className="font-display text-xl text-brand">Enquire About Admission</h2>
+          <h2 className="font-display text-xl text-brand">
+            Class 6-12 Admission Enquiry: Get Fee Structure &amp; Callback
+          </h2>
           <p className="mb-4 mt-1 text-sm text-ink/70">
-            No enquiry fee. Your details stay confidential — our admission team
-            will call you back.
+            Share a few details and our admissions team will call you back with
+            the fee structure, seat availability and a campus visit slot.
           </p>
           <EnquiryForm source="hero" />
         </div>
@@ -65,13 +65,13 @@ export function Hero() {
             <div className="rounded-card border border-cream-border bg-white p-4 text-center shadow-card">
               <div className="font-display text-3xl text-brand">1:20</div>
               <div className="text-xs text-ink/70 sm:text-sm">
-                Teacher–Student Ratio
+                Student–Teacher Ratio
               </div>
             </div>
             <div className="rounded-card border border-cream-border bg-white p-4 text-center shadow-card">
-              <div className="font-display text-3xl text-brand">100%</div>
+              <div className="font-display text-3xl text-brand">6–12</div>
               <div className="text-xs text-ink/70 sm:text-sm">
-                CBSE Board Results
+                Classes Offered
               </div>
             </div>
           </div>

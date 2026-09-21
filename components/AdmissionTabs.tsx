@@ -11,65 +11,65 @@ import secondaryImg from "./secondary-science-lab.png";
 const TABS = [
   {
     id: "class-6",
-    label: "Class VI",
-    preset: "Class VI",
+    label: "Class 6",
+    preset: "Class 6",
     taught:
-      "Class VI is the bridge into subject-based learning. Students move to dedicated teachers for English, Hindi, Mathematics, Science and Social Science, pick up a third language and computer skills, and keep art, music and sport in their week.",
+      "CBSE curriculum with activity-based learning, labs and co-curricular clubs, as students step up into the middle school (Classes 6 to 8).",
     highlights: [
       "Up to 35 students per class",
-      "Teacher-Student Ratio 1:20",
-      "Regular mobile / SMS updates for parents",
+      "Student-Teacher Ratio 1:20",
+      "Science labs and smart classrooms",
     ],
     basis:
-      "Admission based on a written assessment in core subjects and an interview, with age eligibility as per CBSE norms.",
+      "Admission follows an entrance test in English, Mathematics, Science and Hindi.",
     img: primaryImg,
     imgAlt: "The library at SKS World School",
   },
   {
     id: "class-7-8",
-    label: "Classes VII–VIII",
-    preset: "Class VII",
+    label: "Classes 7–8",
+    preset: "Class 7",
     taught:
-      "Ideas in Science, Mathematics and Social Science grow deeper, and students learn by doing — building in the Robotic Lab, using computer applications and joining clubs that stretch curiosity beyond the textbook.",
+      "CBSE curriculum with activity-based learning, labs and co-curricular clubs that keep middle school students curious and engaged.",
     highlights: [
-      "Robotic Lab in association with LEGO",
-      "Smart classrooms & activity labs",
-      "House system with inter-house events",
+      "Up to 35 students per class",
+      "Science labs and smart classrooms",
+      "Yoga (Sadhana), self-defence and sports",
     ],
     basis:
-      "Admission based on a written assessment in core subjects and an interview, subject to seat availability.",
+      "Admission follows an entrance test in English, Mathematics, Science and Hindi.",
     img: middleImg,
     imgAlt: "Students in the computer lab at SKS World School",
   },
   {
     id: "class-9-10",
-    label: "Classes IX–X",
-    preset: "Class IX",
+    label: "Classes 9–10",
+    preset: "Class 9",
     taught:
-      "Board preparation begins in earnest. Regular tests, practical work, revision plans and one-to-one mentoring help students build strong fundamentals before the CBSE Class X examinations and the choice of stream.",
+      "CBSE board preparation for Class 10, supported by science labs, smart classrooms and a school counsellor parents can meet by appointment.",
     highlights: [
-      "100% CBSE board results",
-      "Remedial and revision support",
-      "Fully equipped science & computer labs",
+      "Up to 35 students per class",
+      "Student-Teacher Ratio 1:20",
+      "Science labs and smart classrooms",
     ],
     basis:
-      "Admission based on a written test, previous academic record and an interview.",
+      "Admission follows an entrance test in English, Mathematics, Science and Hindi.",
     img: secondaryImg,
     imgAlt: "Students in the science lab at SKS World School",
   },
   {
     id: "class-11-12",
-    label: "Classes XI–XII",
-    preset: "Class XI",
+    label: "Classes 11–12",
+    preset: "Class 11",
     taught:
-      "Senior secondary students choose Science, Commerce or Humanities and learn from subject specialists, with lab work, projects and board-focused mentoring that prepare them for college and competitive exams.",
+      "Admissions are open in Class 11 with all streams available. Admission forms can be filled online or at school, followed by a written test.",
     highlights: [
-      "All three streams under one roof",
-      "Lab-intensive practicals",
+      "All streams available in Class 11",
       "Up to 35 students per class",
+      "Counsellor available by appointment",
     ],
     basis:
-      "Admission based on a written test, previous academic record and an interview. Class XI admission is stream-wise, subject to Class X performance and seat availability.",
+      "Admission follows an entrance test in English, Mathematics, Science and Hindi.",
     img: secondaryImg,
     imgAlt: "Students in the science lab at SKS World School",
   },
@@ -85,7 +85,7 @@ export function AdmissionTabs() {
       <div className="section">
       <div className="mb-10">
         <span className="eyebrow">Classes</span>
-        <h2 className="h2">Explore Our Classes — Class VI to Class XII</h2>
+        <h2 className="h2">Class 6 to 12 at SKS World School, Greater Noida West</h2>
       </div>
 
       <div className="-mx-4 mb-5 overflow-x-auto px-4">

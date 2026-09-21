@@ -4,13 +4,13 @@ import { useId, useState } from "react";
 import { CheckIcon } from "./icons";
 
 const CLASS_OPTIONS = [
-  "Class VI",
-  "Class VII",
-  "Class VIII",
-  "Class IX",
-  "Class X",
-  "Class XI",
-  "Class XII",
+  "Class 6",
+  "Class 7",
+  "Class 8",
+  "Class 9",
+  "Class 10",
+  "Class 11",
+  "Class 12",
 ];
 
 type Status = "idle" | "submitting" | "success" | "error";
@@ -164,7 +164,7 @@ export function EnquiryForm({
       />
 
       <button type="submit" className="btn-primary w-full" disabled={status === "submitting"}>
-        {status === "submitting" ? "Submitting…" : "Submit Enquiry"}
+        {status === "submitting" ? "Submitting…" : "Get Fee Structure & Call Back"}
       </button>
 
       {status === "error" && (

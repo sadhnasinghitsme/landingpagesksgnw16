@@ -125,7 +125,7 @@ export function EnquiryModalProvider({ children }: { children: ReactNode }) {
             <p className="mt-5 text-center text-xs text-gray-500">
               Prefer WhatsApp? Message us on{" "}
               <a
-                href="https://wa.me/919319910888"
+                href="https://wa.me/919319910888?text=Hi%2C%20I%20want%20to%20know%20about%20Class%206-12%20admission%20at%20SKS%20World%20School%2C%20Greater%20Noida%20West."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold text-[#132A45] underline decoration-[#D4A548] underline-offset-2 hover:text-[#D4A548]"

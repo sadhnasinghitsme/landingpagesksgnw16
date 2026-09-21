@@ -49,7 +49,7 @@ export function StickyTopBar() {
             <ApplyNowButton
               className="hidden items-center gap-2 rounded-btn px-4 py-2 text-sm font-medium text-[#132A45] ring-1 ring-[#D4A548] transition hover:bg-[#D4A548] hover:text-white md:inline-flex sm:text-base"
             >
-              Apply Now
+              Enquire Now
             </ApplyNowButton>
           </div>
         </div>

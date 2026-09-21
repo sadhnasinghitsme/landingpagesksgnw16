@@ -1,28 +1,28 @@
 const STEPS = [
   {
     n: 1,
-    title: "Registration",
-    body: "Submit the enquiry form or visit the school to collect and fill the registration form.",
+    title: "Enquire / Register",
+    body: "Enquire or register online, or collect the form at the school office.",
   },
   {
     n: 2,
-    title: "Documentation",
-    body: "Provide birth certificate, previous report card / transfer certificate, Aadhaar and photographs.",
+    title: "Entrance Test",
+    body: "Appear for the entrance test in English, Mathematics, Science and Hindi.",
   },
   {
     n: 3,
-    title: "Test / Interview",
-    body: "Sit a written assessment in core subjects, followed by a short interview with the student and a parent.",
+    title: "Interaction",
+    body: "Meet the Principal or school counsellor for a short interaction.",
   },
   {
     n: 4,
-    title: "Fee Deposit",
-    body: "On selection, confirm the seat by depositing the admission and term fee within the given date.",
+    title: "Documents",
+    body: "Submit the application form, self-attested birth certificate copy, Transfer Certificate (Class 2 onwards), medical fitness certificate, parents' address and ID proof, and photographs.",
   },
   {
     n: 5,
     title: "Admission Confirmed",
-    body: "Receive the admission confirmation, section allotment and transport / uniform details.",
+    body: "Admission is confirmed on payment of the fee.",
   },
 ];
 
@@ -32,7 +32,7 @@ export function HowToApply() {
       <div className="section">
         <div className="mb-10">
           <span className="eyebrow">Process</span>
-          <h2 className="h2">How to Apply — Admission Process</h2>
+          <h2 className="h2">Class 6 to 12 Admission Process</h2>
         </div>
 
         <ol className="grid gap-5 sm:grid-cols-2 lg:grid-cols-5">

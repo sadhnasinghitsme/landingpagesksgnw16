@@ -26,15 +26,15 @@ const SITE_URL = "https://skswsgnw.ac.in";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title:
-    "Admissions Open 2026-27 | SKS World School, Greater Noida West (CBSE)",
+  title: "Class 6-12 Admission in Greater Noida West | CBSE School",
   description:
-    "Apply for admission to SKS World School, Greater Noida West — CBSE affiliated (No. 2134098), 1:20 teacher-student ratio, 100% board results, International School Award 2018-21, LEGO Robotics Lab. Admissions for Classes VI to XII. Enquire now: +91-9891081270.",
+    "SKS World School, Sector 16, Greater Noida West (Noida Extension). CBSE co-ed school for Class 6 to 12. Enquire for admission and fee structure.",
   keywords: [
     "SKS World School",
-    "best school in Greater Noida West",
+    "Class 6 to 12 admission Greater Noida West",
+    "class 11 admission Noida Extension",
     "CBSE school Greater Noida West",
-    "admission Greater Noida West",
+    "school admission in Greater Noida West",
     "Sector 16 Greater Noida West school",
   ],
   alternates: {
@@ -44,16 +44,16 @@ export const metadata: Metadata = {
     type: "website",
     url: SITE_URL,
     siteName: "SKS World School, Greater Noida West",
-    title: "Admissions Open | SKS World School, Greater Noida West (CBSE)",
+    title: "Class 6-12 Admission in Greater Noida West | CBSE School",
     description:
-      "CBSE affiliated, 1:20 ratio, 100% board results, International School Award 2018-21, LEGO Robotics Lab. Classes VI to XII. Enquire: +91-9891081270.",
+      "SKS World School, Sector 16, Greater Noida West. CBSE co-ed school for Class 6 to 12. Enquire for admission and fee structure: +91-9891081270.",
     locale: "en_IN",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Admissions Open | SKS World School, Greater Noida West",
+    title: "Class 6-12 Admission in Greater Noida West | CBSE School",
     description:
-      "CBSE affiliated. 1:20 ratio. 100% board results. Enquire: +91-9891081270.",
+      "CBSE co-ed school for Class 6 to 12, Sector 16, Greater Noida West. Enquire: +91-9891081270.",
   },
   robots: { index: true, follow: true },
 };

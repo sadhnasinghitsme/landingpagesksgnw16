@@ -5,52 +5,40 @@ import { HOUSE_OPEN_BORDER, HOUSE_OPEN_TEXT } from "./HouseAccent";
 
 const FAQS = [
   {
-    q: "What is the admission process at SKS World School?",
-    a: "Submit an enquiry or registration form, complete documentation, appear for a written test and an interview, deposit the fee on selection, and receive your admission confirmation.",
+    q: "Which classes and streams are open for admission?",
+    a: "SKS World School admits students in Class 6 to 12. Class 11 has all streams available.",
   },
   {
-    q: "Which board is the school affiliated to?",
-    a: "SKS World School is affiliated to the Central Board of Secondary Education (CBSE), Affiliation No. 2134098, under SKS Educational & Social Trust.",
+    q: "Are admissions open in Class 11?",
+    a: "Yes. Fill the admission form online or at school, then appear for a written test.",
   },
   {
-    q: "Is there an entrance exam for admission?",
-    a: "Yes. Applicants for Classes VI to X sit a written assessment in core subjects followed by an interview, and Class XI applicants are also considered stream-wise.",
+    q: "What is the admission process?",
+    a: "Register online or at the school office, appear for the entrance test in English, Mathematics, Science and Hindi, complete the interaction and submit documents. Admission is confirmed on payment of the fee.",
   },
   {
-    q: "Is SKS World School co-educational?",
-    a: "Yes. It is a co-educational, English-medium school admitting students from Class VI to Class XII, with Science, Commerce and Humanities offered in Classes XI and XII.",
+    q: "Which documents are required?",
+    a: "Application form, self-attested birth certificate copy, Transfer Certificate, medical fitness certificate, parents' address and ID proof, and photographs.",
   },
   {
-    q: "What is the class strength / section size?",
-    a: "Class sizes are kept manageable — sections in Classes VI to XII have up to 35 students.",
+    q: "Is SKS World School CBSE affiliated, and where is it?",
+    a: "Yes, CBSE Affiliation No. 2134098. The school is at HS-04, Sector-16, Greater Noida West (Noida Extension).",
   },
   {
-    q: "What is the teacher-student ratio?",
-    a: "The teacher-student ratio is 1:20, so every student gets individual attention.",
+    q: "What is the fee structure?",
+    a: "The 2026-27 Composite Fee Structure is on the school website. Submit the form or message us on WhatsApp and we will share the fees for your child's class.",
   },
   {
-    q: "Does the school provide transport?",
-    a: "Yes. The school runs new buses with custom routes across Greater Noida West and nearby areas, with CCTV and trained staff on board.",
+    q: "Is school transport available?",
+    a: "Yes. Bus routes are customised to pick-up points, and every bus is mobile-connected with GPS and CCTV.",
   },
   {
-    q: "Are meals provided at school?",
-    a: "Students usually bring a healthy home-packed lunch. Please contact the school office for the current canteen and snack arrangements.",
+    q: "What is the class size and student-teacher ratio?",
+    a: "Classes 6 to 12 have up to 35 students per class. The student-teacher ratio is 1:20.",
   },
   {
-    q: "How safe is the campus?",
-    a: "The campus has CCTV surveillance, trained security staff, controlled entry and exit, and supervised transport. The child helpline 1098 is also displayed for awareness.",
-  },
-  {
-    q: "What is the teaching approach?",
-    a: "Learning is activity-based and concept-led, supported by smart classrooms, well-equipped science, maths and computer labs, and a Robotic Lab in association with LEGO. The school holds the International School Award 2018-21.",
-  },
-  {
-    q: "How does Class XI admission work?",
-    a: "Class XI admission is stream-wise — Science, Commerce or Humanities — and depends on the student's Class X performance, the entrance assessment and seat availability.",
-  },
-  {
-    q: "What are the school's board results?",
-    a: "SKS World School has a record of 100% results in the CBSE board examinations.",
+    q: "Are meals provided?",
+    a: "Meals are available at the school canteen on a pay-and-buy basis.",
   },
 ];
 

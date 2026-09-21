@@ -19,7 +19,7 @@ export function StickyBottomBar() {
         onClick={() => open()}
         className="inline-flex items-center justify-center gap-2 rounded-btn bg-brand py-3 text-base font-medium text-cream"
       >
-        Apply Now
+        Enquire Now
       </button>
     </div>
   );

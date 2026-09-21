@@ -5,11 +5,11 @@ export function FinalCTA() {
     <section id="apply" className="band-maroon">
       <div className="section">
         <div className="mb-10">
-          <span className="eyebrow">Admissions Open 2026-27</span>
-          <h2 className="h2">Give Your Child a Head Start</h2>
+          <span className="eyebrow">Visit Us in Sector 16, Greater Noida West</span>
+          <h2 className="h2">Ready to Apply for Class 6-12?</h2>
           <p className="lede text-cream/85">
-            Seats are limited and filled on a first-come basis. Share your
-            details and our admission team will guide you through every step.
+            Send an enquiry and our admissions team will guide you through the
+            entrance test, documents and fee structure. Or call +91-9891081270.
           </p>
         </div>
 
@@ -40,8 +40,9 @@ export function FinalCTA() {
               <div>
                 <dt className="inline font-semibold text-cream">Nearby: </dt>
                 <dd className="inline">
-                  3 km Crossing Republik &middot; 5 km Sector-119 Noida &middot; 9 km
-                  Noida City Centre Metro
+                  3 km Crossing Republik &middot; 5 km Sector 119, Noida &middot;
+                  7.5 km Sectors 51/52/71/72, Noida &middot; 9 km Noida City
+                  Centre Metro &middot; 12 km Sector 62 &middot; 14 km Indirapuram
                 </dd>
               </div>
             </dl>
@@ -65,10 +66,11 @@ export function FinalCTA() {
               Enquire &amp; Find Us
             </p>
             <h3 className="font-display text-2xl text-brand">
-              Start Your Admission Enquiry
+              Class 6-12 Admission Enquiry: Get Fee Structure &amp; Callback
             </h3>
             <p className="mb-4 mt-1 text-sm text-ink/70">
-              Takes less than a minute. No obligation.
+              Share a few details and our admissions team will call you back
+              with the fee structure, seat availability and a campus visit slot.
             </p>
             <EnquiryForm source="final-cta" />
           </div>

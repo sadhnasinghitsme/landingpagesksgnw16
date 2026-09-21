@@ -3,28 +3,28 @@ import { HOUSE_BORDER_L } from "./HouseAccent";
 const ROWS = [
   {
     stage: "Middle",
-    classes: "Class VI",
-    basis: "Written assessment in core subjects and an interview; age eligibility as per CBSE norms.",
+    classes: "Class 6",
+    basis: "Entrance test in English, Mathematics, Science and Hindi.",
   },
   {
     stage: "Middle",
-    classes: "Classes VII and VIII",
-    basis: "Written assessment in core subjects and an interview, plus the previous class report card and seat availability.",
+    classes: "Classes 7 and 8",
+    basis: "Entrance test in English, Mathematics, Science and Hindi.",
   },
   {
     stage: "Secondary",
-    classes: "Class IX",
-    basis: "Written test, previous academic record and interview.",
+    classes: "Class 9",
+    basis: "Entrance test in English, Mathematics, Science and Hindi.",
   },
   {
     stage: "Secondary",
-    classes: "Class X",
-    basis: "Written test, previous academic record and interview, subject to seat availability.",
+    classes: "Class 10",
+    basis: "Entrance test in English, Mathematics, Science and Hindi.",
   },
   {
     stage: "Senior Secondary",
-    classes: "Classes XI and XII (Science / Commerce / Humanities)",
-    basis: "Stream allotment based on Class X performance, written test and seat availability.",
+    classes: "Classes 11 and 12",
+    basis: "Admissions open in Class 11 with all streams. Fill the form online or at school, then appear for a written test.",
   },
 ];
 
@@ -48,7 +48,7 @@ export function AgeEligibility() {
           </thead>
           <tbody>
             {ROWS.map((r, i) => (
-              <tr key={r.stage} className={i % 2 ? "bg-cream/70" : "bg-white"}>
+              <tr key={r.classes} className={i % 2 ? "bg-cream/70" : "bg-white"}>
                 <td
                   className={`border-l-4 px-4 py-3 font-semibold text-brand ${HOUSE_BORDER_L[i % 4]}`}
                 >

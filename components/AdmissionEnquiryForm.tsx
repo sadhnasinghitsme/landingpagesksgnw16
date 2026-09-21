@@ -6,13 +6,13 @@ const GOLD = "#D4A548";
 const GOLD_DARK = "#B78A34";
 
 const GRADE_OPTIONS = [
-  "Class VI",
-  "Class VII",
-  "Class VIII",
-  "Class IX",
-  "Class X",
-  "Class XI",
-  "Class XII",
+  "Class 6",
+  "Class 7",
+  "Class 8",
+  "Class 9",
+  "Class 10",
+  "Class 11",
+  "Class 12",
 ];
 
 const fieldClass =
@@ -231,7 +231,7 @@ export function AdmissionEnquiryForm({
           e.currentTarget.style.backgroundColor = GOLD;
         }}
       >
-        {status === "submitting" ? "Submitting…" : "Submit Enquiry"}
+        {status === "submitting" ? "Submitting…" : "Get Fee Structure & Call Back"}
       </button>
 
       {status === "error" && (

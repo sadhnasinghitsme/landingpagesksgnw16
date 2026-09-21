@@ -25,7 +25,7 @@ export function Testimonials() {
       <div className="section">
         <div className="mb-10">
           <span className="eyebrow">Parent Voices</span>
-          <h2 className="h2">What Our Parents Say</h2>
+          <h2 className="h2">What Parents Say</h2>
         </div>
 
         <div className="grid gap-5 lg:grid-cols-3">

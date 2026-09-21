@@ -79,8 +79,7 @@ export function Footer() {
 
         <p className="mt-10 border-t border-white/10 pt-5 text-xs text-cream/50">
           &copy; {new Date().getFullYear()} SKS World School, Greater Noida West.
-          Admission enquiry landing page. For complete information visit
-          skswsgnw.ac.in.
+          All rights reserved.
           <span className="mx-2 text-cream/25">|</span>
           <Link
             href="/privacy-policy"
